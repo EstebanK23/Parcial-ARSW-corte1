@@ -11,10 +11,12 @@ import java.util.List;
 public interface PrimeService
 {
 
-    void addFoundPrime( FoundPrime foundPrime );
+    public void addFoundPrime( FoundPrime foundPrime )throws PrimosException;
 
-    List<FoundPrime> getFoundPrimes();
+    public List<FoundPrime> getFoundPrimes()throws PrimosException;
 
-    FoundPrime getPrime( String prime );
+    public FoundPrime getPrime( String prime )throws PrimosException;
+    
+    public FoundPrime getFoundPrimeId( String Number )throws PrimosException;
 
 }
